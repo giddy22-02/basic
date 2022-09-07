@@ -7,6 +7,6 @@
     <title>About Us</title>
 </head>
 <body>
-    <h1>This is About Us Page</h1>
+    <h1>This is About Us Page from Controller</h1>
 </body>
 </html>
