@@ -22,6 +22,6 @@ Route::get('/about', function () {
 });
 
 Route::get('/contact', function () {
-    echo "Welcome to Contact Us Page";
+    return view('contact');
 });
 
