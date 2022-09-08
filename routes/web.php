@@ -17,10 +17,9 @@ use App\Http\Controllers\Demo\DemoController;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/about',[DemoController::class,'Index']);
-
-Route::get('/contact', function () {
-    return view('contact');
+Route::controller(DemoController::class)->group(function(){
+    Route::get('/about', 'Index');
+    Route::get('/contact','contactMethod');
 });
+
 
